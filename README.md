@@ -1,4 +1,4 @@
-# Data format
+# Function
 for every AV  
 input:[ID,frame,x,y,left_front_x,left_front_y,left_behind_x,left_behind_y,front_x,front_y,behind_x,behind_y,right_front_x,right_front_y,right_behind_x,right_behind_y] of previous 80 frame(0.1 s)  
 output:[x, y] in the next frame(0.1 s)  
@@ -12,6 +12,11 @@ model = load_model('my_model.h5')
 predicted = model.predict(np.reshape(input,(1, 80, 14)))
 # predictd is the output for every single step [[x,y]]
 ```
+
+# Data used in training and testing 
+The processed NGSIM data now can be obtained as below.
+link：https://pan.baidu.com/s/143FJu_pEas__XzGnvkNdMA
+password：2333
 
 # Publication
 @article{ZHANG2019287,  
