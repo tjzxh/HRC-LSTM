@@ -1,7 +1,10 @@
 # Function
-for every AV  
-input:[ID,frame,x,y,left_front_x,left_front_y,left_behind_x,left_behind_y,front_x,front_y,behind_x,behind_y,right_front_x,right_front_y,right_behind_x,right_behind_y] of previous 80 frame(0.1 s)  
-output:[x, y] in the next frame(0.1 s)  
+Predict the position of the subject vehicle with historical information of surrounding vehicles
+
+Input: `[ID,frame,x,y,left_front_x,left_front_y,left_behind_x,left_behind_y,front_x,front_y,behind_x,behind_y,right_front_x,right_front_y,right_behind_x,right_behind_y]` of previous 80 frame(0.1 s)
+
+Output:<br>
+`[x, y]` in the next frame(0.1 s)  
 
 # Usage
 ```python
@@ -13,9 +16,9 @@ predicted = model.predict(np.reshape(input,(1, 80, 14)))
 # predictd is the output for every single step [[x,y]]
 ```
 
-# Data used in training and testing 
-The processed NGSIM data now can be obtained as below.
-link：https://pan.baidu.com/s/143FJu_pEas__XzGnvkNdMA
+# Data used in training 
+The processed NGSIM data now can be obtained as below.<br>
+link：https://pan.baidu.com/s/143FJu_pEas__XzGnvkNdMA<br>
 password：2333
 
 # Publication
